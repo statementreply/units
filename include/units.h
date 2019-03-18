@@ -4129,6 +4129,7 @@ namespace units
 		using PI = unit<std::ratio<1>, dimensionless::scalar, std::ratio<1>>;
 
 		static constexpr const unit_t<PI>																											pi(1);											///< Ratio of a circle's circumference to its diameter.
+		static constexpr const unit_t<inverse<angle::radian>>																						k_a(1);											///< Ratio of a circle's radius of curvature to its radius.
 		static constexpr const velocity::meters_per_second_t																						c(299792458.0);									///< Speed of light in vacuum.
 		static constexpr const unit_t<compound_unit<cubed<length::meters>, inverse<mass::kilogram>, inverse<squared<time::seconds>>>>				G(6.67408e-11);									///< Newtonian constant of gravitation.
 		static constexpr const unit_t<compound_unit<energy::joule, time::seconds>>																	h(6.626070040e-34);								///< Planck constant.
